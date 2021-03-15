@@ -882,7 +882,7 @@ p {
 	z-index: 1;
 }
 
-.page-header-content h2 {
+.page-header-content h1 {
 	color: var(--light-gray);
 	text-align: center;
 }
