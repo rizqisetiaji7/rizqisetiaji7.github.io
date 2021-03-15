@@ -874,12 +874,11 @@ p {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	/*z-index: 1;*/
 	background-color: rgba(6, 26, 35, 0.7);
 }
 
 .page-header-content {
-	height: 100%;
+	height: 23.437rem;
 	z-index: 1;
 }
 
