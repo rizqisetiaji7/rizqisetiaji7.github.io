@@ -20,6 +20,7 @@
 	.inner-hero-desc {
 		position: relative !important;
 		margin-top: 3rem;
+		width: 100%;
 	}
 
 	.inner-banner {
