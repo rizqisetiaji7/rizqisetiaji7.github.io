@@ -821,6 +821,13 @@ p {
 	padding: 1.5rem 0;
 }
 
+.footer-copyright .footer-link-menu a{
+	display: inline-block;
+	margin-right: 1rem;
+	font-size: .8rem;
+	color: var(--light-gray);
+}
+
 .copyright-text {
 	font-size: .8rem;
 }
