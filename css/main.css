@@ -833,7 +833,7 @@ p {
 }
 
 .footer-copyright .footer-link-menu a:hover{
-	color: var(---orange-primary);
+	color: var(--orange-primary);
 }
 
 .copyright-text {
