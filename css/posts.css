@@ -1,6 +1,28 @@
-#page-header {
+:root {
+	/* Primary Colors */
+	--green-primary: #159946;
+	--orange-primary: #FF883B;
+	--blue-primary: #0A77DE;
+	--red-primary: #E5154C;
+	--dark-primary: #061A23;
+	--light-gray: #F8FBFC;
+	--light-blue-gray: #EFF5F7;
+}
+
+.page-header {
+	position: relative;
 	min-height: 23.437rem;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+}
+
+.page-header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--dark-primary);
 }
