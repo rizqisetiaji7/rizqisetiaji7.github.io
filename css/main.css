@@ -61,6 +61,7 @@
 
 	--p-lg: 9rem;
 	--p-md: calc(1rem * 3.8);
+	--p-sm: calc(1rem * 2.4);
 }
 
 html, body {
@@ -729,7 +730,7 @@ p {
 }
 
 #footer .footer-menu {
-	padding: var(--p-md) 0;
+	padding: var(--p-sm) 0 ;
 }
 
 #footer .footer-menu .footer-logo {
@@ -743,7 +744,7 @@ p {
 
 .footer-menu-title {
 	font-size: 1.15rem;
-	margin-top: 1.4rem;
+	/*margin-top: 1.4rem;*/
 	font-weight: var(--medium);
 }
 
