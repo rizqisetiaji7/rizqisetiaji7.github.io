@@ -832,6 +832,10 @@ p {
 	transition: all .3s;
 }
 
+.footer-copyright .footer-link-menu a:last-child {
+	margin-right: 0;
+}
+
 .footer-copyright .footer-link-menu a:hover{
 	color: var(--orange-primary);
 }
