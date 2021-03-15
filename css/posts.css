@@ -25,5 +25,15 @@
 	right: 0;
 	bottom: 0;
 	/*z-index: 1;*/
-	background-color: var(--dark-primary);
+	background-color: rgba(6, 26, 35, 0.5);
+}
+
+.page-header-content {
+	height: 100%;
+	z-index: 1;
+}
+
+.page-header-content h1 {
+	color: var(--light-gray);
+	text-align: center;
 }
