@@ -878,6 +878,7 @@ p {
 }
 
 .page-header-content {
+	padding-top: 4rem;
 	height: 23.437rem;
 	z-index: 1;
 }
