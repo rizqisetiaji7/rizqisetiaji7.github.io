@@ -109,6 +109,11 @@
 		text-align: center;
 	}
 
+	.footer-copyright .footer-link-menu {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
 	.copyright-text {
 		text-align: center;
 	}
@@ -132,6 +137,10 @@
 	#blog .blog-thumbnail {
 		min-height: calc(1rem * 22);
 		max-height: calc(1rem * 22);
+	}
+
+	.footer-copyright .footer-link-menu {
+		text-align: center;
 	}
 
 	.copyright-text {
@@ -228,6 +237,11 @@
 		width: auto;
 		padding: 0 1.2rem;
 		border-radius: 0;
+	}
+
+	.footer-copyright .footer-link-menu {
+		margin-bottom: 0;
+		text-align: left;
 	}
 
 	.copyright-text {

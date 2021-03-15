@@ -826,6 +826,14 @@ p {
 	margin-right: 1rem;
 	font-size: .8rem;
 	color: var(--light-gray);
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.footer-copyright .footer-link-menu a:hover{
+	color: var(---orange-primary);
 }
 
 .copyright-text {
