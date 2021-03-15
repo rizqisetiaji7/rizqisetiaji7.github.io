@@ -1,0 +1,315 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 290px) {
+	/* ===== Section Hero Content ===== */
+	.hero-content {
+		height: auto !important;
+	}
+
+	.hero-content h2 {
+		font-size: 1.6rem;
+	}
+
+	.hero-content h1 {
+		font-size: 3rem;
+	}
+
+	#hero-desc {
+		height: auto !important;
+		text-align: center;
+	}
+	.inner-hero-desc {
+		position: relative !important;
+		margin-top: 3rem;
+	}
+
+	.inner-banner {
+		height: auto;
+	}
+
+	.inner-banner img {
+		width: 100%;
+		margin-left: 1.5rem;
+		position: relative;
+	}
+
+	/* ===== Section About ===== */
+	#about-me .card-about {
+		padding: 2rem 1rem;
+		border-radius: 1.5rem;
+	}
+
+	#about-me .card-profile-picture {
+		border-radius: 1.5rem;
+		margin-bottom: 2rem;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	#about-me .inner-about-content {
+		margin-left: 0;
+	}
+
+	#about-me .inner-about-content a.btn {
+		width: 100%;
+	}
+
+	/* ===== Portfolio Section ===== */
+	.portfolio-content {
+		height: 14rem;
+		max-height: 24rem;
+	}
+
+
+	/* ===== Hire Me Section ===== */
+	#hire-me .hire-me-headline {
+		font-size: 1.2rem;
+	}
+
+	#hire-me .hire-me-big-title {
+		font-size: 1.75rem;
+	}
+
+
+	/* ===== Blog Section ===== */
+	#blog .blog-thumbnail {
+		min-height: calc(1rem * 12);
+		max-height: calc(1rem * 12);
+	}
+
+
+	/* ===== Footer Section ===== */
+	.footer-subscribe-title {
+		text-align: center;
+		font-size: 1.25rem !important;
+	}
+
+	.footer-form .footer-input .input-content input {
+		border: none;
+		border-radius: var(--radius);
+		outline: none;
+		outline-style: none;
+		outline-color: transparent;
+		margin-bottom: .3rem;
+	}
+
+	.footer-form .footer-input .input-content {
+		background-color: transparent;
+	}
+
+	.footer-form .footer-input .input-content .btn-subscribe {
+		position: relative;
+		display: block;
+		width: 100%;
+		padding: .8rem 0;
+		border-radius: var(--radius);
+	}
+
+	.footer-social-media {
+		text-align: center;
+	}
+
+}
+
+@media (min-width: 576px) {
+	/* ===== Section About ===== */
+	#about-me .card-about {
+		padding: 3rem 2rem;
+		border-radius: 1.5rem;
+	}
+
+	/* ===== Portfolio Section ===== */
+	.portfolio-content {
+		height: 24rem;
+		max-height: 32rem;
+	}
+
+	/* ===== Blog Section ===== */
+	#blog .blog-thumbnail {
+		min-height: calc(1rem * 22);
+		max-height: calc(1rem * 22);
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	/* ===== Section Hero Content */
+	.hero-content h2 {
+		font-size: 1.6rem !important;
+	}
+
+	.hero-content h1 {
+		font-size: 3rem !important;
+	}
+
+	#hero-desc {
+		height: calc(100vh - 12rem);
+		text-align: inherit;
+	}
+
+	.inner-hero-desc {
+		margin-top: 1rem;
+	}
+
+	.inner-banner {
+		height: calc(100vh - 12rem);
+	}
+
+	.inner-banner img{
+		position: absolute;
+		bottom: 0;
+		width: 28rem;
+		margin-left: -2rem;
+	}
+
+	/* ===== Section About ===== */
+	#about-me .card-about {
+		padding: 3rem;
+		border-radius: 1.5rem;
+	}
+
+	#about-me .inner-about-content {
+		margin-left: 0;
+	}
+
+	#about-me .inner-about-content a.btn {
+		width: auto;
+	}
+
+	/* ===== Portfolio Section ===== */
+	.portfolio-content {
+		height: 16rem;
+		max-height: 24rem;
+	}
+
+
+	/* ===== Hire Me Section ===== */
+	#hire-me .hire-me-headline {
+		font-size: 1.5rem;
+	}
+
+	#hire-me .hire-me-big-title {
+		font-size: 2rem;
+	}
+
+	/* ===== Blog Section ===== */
+	#blog .blog-thumbnail {
+		min-height: calc(1rem * 10);
+		max-height: calc(1rem * 10);
+	}
+
+
+	/* ===== Footer Section ===== */
+
+	.footer-subscribe-title {
+		font-size: 1.35rem !important;
+	}
+
+	.footer-form .footer-input .input-content input {
+		border: none;
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+
+	.footer-form .footer-input .input-content {
+		background-color: #fff;
+	}
+
+	.footer-form .footer-input .input-content .btn-subscribe {
+		position: absolute;
+		width: auto;
+		padding: 0 1.2rem;
+		border-radius: 0;
+	}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.hero-content h2{
+		font-size: 2rem !important;
+	}
+
+	.hero-content h1{
+		font-size: 3.4rem !important;
+	}
+
+	#hero-desc {
+		height: calc(100vh - 4rem);
+	}
+
+	.inner-hero-desc {
+		margin-top: 0;
+	}
+
+	.inner-banner {
+		height: calc(100vh - 4rem);
+	}
+
+	.inner-banner img{
+		width: 38rem !important;
+		margin-left: 0 !important;
+	}
+
+	/* ===== Section About ===== */
+	#about-me .card-about {
+		padding: 5rem 7rem;
+	}
+
+	#about-me .card-profile-picture {
+		width: 100%;
+		max-width: 27rem;
+	}
+
+	#about-me .inner-about-content {
+		margin-left: 1.5rem;
+	}
+
+	/* ===== Portfolio Section ===== */
+	.portfolio-content {
+		height: 22rem;
+		max-height: 34rem;
+	}
+
+
+	/* ===== Hire Me Section ===== */
+	#hire-me .hire-me-headline {
+		font-size: calc(1rem * 1.5);
+	}
+
+	#hire-me .hire-me-big-title {
+		font-size: 3rem;
+	}
+
+	/* ===== Blog Section ===== */
+	#blog .blog-thumbnail {
+		min-height: calc(1rem * 13);
+		max-height: calc(1rem * 13);
+	}
+	
+	/* ===== Footer Section ===== */
+	.footer-subscribe-title {
+		text-align: left;
+	}
+
+	.footer-social-media {
+		text-align: left;
+	}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	/* ===== About Section ===== */
+	.portfolio-content {
+		height: 26rem;
+		max-height: 38rem;
+	}
+
+	/* ===== Blog Section ===== */
+	#blog .blog-thumbnail {
+		min-height: calc(1rem * 15);
+		max-height: calc(1rem * 15);
+	}
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }
