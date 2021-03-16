@@ -541,6 +541,10 @@ p {
 	color: #fff;
 }
 
+#services .card-services:hover .icon-box svg.ic-db {
+	fill: #fff;
+}
+
 #services .card-services .card-content .card-link:hover {
 	text-decoration: underline;
 }
@@ -695,6 +699,7 @@ p {
 
 #blog .blog-content {
 	position: relative;
+	padding: 0 .35rem;
 }
 
 #blog .blog-content .blog-title {
