@@ -70,6 +70,7 @@ html, body {
 	color: var(--dark-primary) !important;
 	background-color: var(--light-gray);
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 p {
@@ -438,6 +439,7 @@ p {
 	margin-top: -2rem;
 	padding: 5rem 7rem;
 	border: 0;
+	overflow: hidden;
 	border-radius: calc(1rem*3);
 	box-shadow: 0 .8rem 2rem rgba(6,26,35,0.08);
 }
