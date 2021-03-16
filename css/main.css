@@ -151,6 +151,8 @@ p {
 .hover\:bg-dark:hover {background-color: var(--dark-primary) !important;}
 
 /* ===== Colors ===== */
+.c-light-gray { color: var(--light-gray); transition: color .3s ease;  }
+
 .c-green-50 {color: var(--green-50); transition: color .3s ease;}
 .c-green-100 {color: var(--green-100); transition: color .3s ease;}
 .c-green-200 {color: var(--green-200); transition: color .3s ease;}
