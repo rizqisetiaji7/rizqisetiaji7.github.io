@@ -678,55 +678,70 @@ p {
 /* ===== Blog ===== */
 #blog { position: relative; }
 
-#blog .blog-thumbnail {
+.blog-thumbnail {
 	width: 100%;
 	position: relative;
 	background-color: var(--dark-100);
 	border-radius: var(--radius);
 	overflow: hidden;
+	height: 4rem;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
-#blog .blog-thumbnail img {
-	width: 100%;
-	object-fit: cover;
-	/*position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 100%;
-	transform: translateX(-50%) translateY(-50%);
-	object-fit: cover;*/
-}
-
-#blog .blog-content {
+.blog-content {
 	position: relative;
 	padding: 0 .35rem;
+	width: 100%;
 }
 
-#blog .blog-content .blog-title {
+.blog-content .blog-title {
 	text-decoration: none;
 	font-size: 1.18rem;
 	font-weight: var(--semibold);
-	margin-bottom: .5rem;
+	/*margin-bottom: .5rem;*/
 	display: inline-block;
 	cursor: pointer;
 }
 
-#blog .blog-content .blog-title:focus {
-	color: var(--orange-primary);
+.blog-content .blog-title:focus {
+	color: var(--green-primary);
 }
 
-#blog .blog-content .blog-link {
-	position: relative;
-	display: block;
-	font-size: 1rem;
-	font-weight: var(--semibold);
-	text-decoration: none;
-	margin-top: 1.3rem;
+.blog-content .blog-text-thumbnail {
+	font-size: .95rem;
 }
 
-#blog .blog-content .blog-link .icon-arrow-right {
-	width: 1.2rem;
+.blog-content .blog-title-head {
+	font-size: .8rem;
+}
+
+.blog-content .blog-post-detail {
+	margin: .3rem 0 1rem 0;
+}
+
+.blog-content .blog-post-detail .post-text {
 	display: inline-block;
+	margin-right: 1rem
+}
+
+.blog-content .blog-post-detail .post-text:last-child {
+	margin-right: 0;
+}
+
+.blog-content .blog-post-detail .post-text .uil {
+	color: var(--orange-400);
+	font-size: .85rem;
+	margin-right: .2rem
+}
+
+.blog-content .blog-post-detail .post-text small {
+	color: var(--dark-200);
+}
+
+.blog-content .blog-post-detail .post-text small b {
+	color: var(--dark-400);
 }
 
 /* ===== Footer Copyright ===== */
@@ -866,10 +881,10 @@ p {
 /* Page Header */
 .page-header {
 	position: relative;
-	height: 23.437rem;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	background-attachment: fixed;
 }
 
 .page-header::before {
@@ -883,12 +898,25 @@ p {
 }
 
 .page-header-content {
-	padding-top: 4rem;
-	height: 23.437rem;
+	padding: 4rem 0;
+	min-height: 23.437rem;
 	z-index: 1;
 }
 
-.page-header-content h1 {
-	color: var(--light-gray);
+.page-header-content h1,
+.page-header-content p {
+	color: var(--light-gray) !important;
 	text-align: center;
+}
+
+.page-breadcrumb {
+	background-color: transparent !important;
+}
+
+.page-breadcrumb .breadcrumb-item {
+	font-size: .9rem;
+}
+
+.page-breadcrumb .breadcrumb-item.active {
+	color: var(--dark-200) !important;
 }

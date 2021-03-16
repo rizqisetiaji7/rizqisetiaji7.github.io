@@ -72,9 +72,9 @@
 
 
 	/* ===== Blog Section ===== */
-	#blog .blog-thumbnail {
-		min-height: calc(1rem * 12);
-		max-height: calc(1rem * 12);
+	.blog-thumbnail {
+		min-height: calc(1rem * 13);
+		max-height: calc(1rem * 13);
 	}
 
 
@@ -120,6 +120,14 @@
 
 }
 
+@media (min-width: 375px) {
+	/* ===== Blog Section ===== */
+	.blog-thumbnail {
+		min-height: calc(1rem * 17);
+		max-height: calc(1rem * 17);
+	}
+}
+
 @media (min-width: 576px) {
 	/* ===== Section About ===== */
 	#about-me .card-about {
@@ -134,7 +142,7 @@
 	}
 
 	/* ===== Blog Section ===== */
-	#blog .blog-thumbnail {
+	.blog-thumbnail {
 		min-height: calc(1rem * 22);
 		max-height: calc(1rem * 22);
 	}
@@ -210,9 +218,9 @@
 	}
 
 	/* ===== Blog Section ===== */
-	#blog .blog-thumbnail {
-		min-height: calc(1rem * 10);
-		max-height: calc(1rem * 10);
+	.blog-thumbnail {
+		min-height: calc(1rem * 14);
+		max-height: calc(1rem * 14);
 	}
 
 
@@ -308,7 +316,7 @@
 	}
 
 	/* ===== Blog Section ===== */
-	#blog .blog-thumbnail {
+	.blog-thumbnail {
 		min-height: calc(1rem * 13);
 		max-height: calc(1rem * 13);
 	}
@@ -332,7 +340,7 @@
 	}
 
 	/* ===== Blog Section ===== */
-	#blog .blog-thumbnail {
+	.blog-thumbnail {
 		min-height: calc(1rem * 15);
 		max-height: calc(1rem * 15);
 	}
