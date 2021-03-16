@@ -1,4 +1,6 @@
-console.log('Hello');
+// Animated on Scroll Initial
+AOS.init();
+
 $(window).scroll(function () {
 	let offsetTop = $(this).scrollTop();
 	// console.log(offsetTop);
