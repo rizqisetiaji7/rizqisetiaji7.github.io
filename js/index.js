@@ -2,7 +2,7 @@
 AOS.init({
 	duration: 1200,
 	easing: 'ease',
-	once: false,
+	once: true,
 	mirror: true,
 	anchorPlacement: 'top-bottom'
 });
