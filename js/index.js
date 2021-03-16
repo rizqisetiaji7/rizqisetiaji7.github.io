@@ -1,5 +1,12 @@
 // Animated on Scroll Initial
-AOS.init();
+AOS.init({
+	duration: 1200,
+	easing: 'ease',
+	once: false,
+	mirror: true,
+	anchorPlacement: 'top-bottom'
+});
+
 
 $(window).scroll(function () {
 	let offsetTop = $(this).scrollTop();
