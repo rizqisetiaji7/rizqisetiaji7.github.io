@@ -999,10 +999,10 @@ p {
 	vertical-align: baseline;
 }
 
-.article-content .article-section ol, 
+/*.article-content .article-section ol, 
 .article-content .article-section ul {
 	padding-left: 0;
-}
+}*/
 
 .article-content .article-section ol li,
 .article-content .article-section ul li {
