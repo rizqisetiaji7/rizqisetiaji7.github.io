@@ -82,6 +82,9 @@ p {
 	vertical-align: baseline;
 }
 
+/* ===== Font style ===== */
+.fs-italic { font-style: italic; }
+
 /* ===== Spacing ===== */
 .mb-lg-1 {margin-bottom: var(--m-lg-1) !important;}
 .mb-lg-2 {margin-bottom: var(--m-lg-2) !important;}
@@ -1048,7 +1051,7 @@ p {
 .article-content .article-section h4 { font-size: 1.25rem !important; }
 .article-content .article-section h5 { font-size: 1.125rem !important; }
 .article-content .article-section .text-small, 
-.article-content .article-section small { font-size: 0.85rem !important; }
+.article-content .article-section small { font-size: 0.825rem !important; }
 
 .article-content .article-section h1.article-header-title {
 	margin-top: 0;
