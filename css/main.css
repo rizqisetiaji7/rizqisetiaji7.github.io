@@ -924,6 +924,7 @@ p {
 
 /* Blog Post */
 .article {
+	overflow: hidden;
 	margin-top: 4rem;
 	padding: var(--p-sm) 0;
 }
