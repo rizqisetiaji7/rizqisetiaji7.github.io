@@ -990,3 +990,41 @@ p {
 .article-content .article-detail-post .article-detail-item small {
 	color: var(--dark-400);
 }
+
+.article-content .article-section blockquote, 
+.article-content .article-section ol, 
+.article-content .article-section ul {
+	margin-bottom: 1rem;
+	vertical-align: baseline;
+}
+
+.article-content .article-section a {
+	text-decoration: none;
+	color: var(--green-primary);
+}
+
+.article-content .article-section h1, 
+.article-content .article-section h2,
+.article-content .article-section h3,
+.article-content .article-section h4,
+.article-content .article-section h5 {
+	font-weight: var(--semibold);
+}
+
+.article-content .article-section h1 { font-size: 1.85rem !important; }
+.article-content .article-section h2 { font-size: 1.62rem !important; }
+.article-content .article-section h3 { font-size: 1.42rem !important; }
+.article-content .article-section h4 { font-size: 1.25rem !important; }
+.article-content .article-section h5 { font-size: 1.125rem !important; }
+.article-content .article-section .text-small, 
+.article-content .article-section small { font-size: 0.85rem !important; }
+
+.article-content .article-section h1.article-header-title {
+	margin-top: 0;
+}
+
+.article-content .article-section .article-header-title {
+	margin: 2.75rem 0 1rem;
+	line-height: 1.3;
+	transition: font-size .3s ease;
+}
