@@ -999,6 +999,21 @@ p {
 	vertical-align: baseline;
 }
 
+.article-content .article-section ol, 
+.article-content .article-section ul {
+	padding-left: 0;
+}
+
+.article-content .article-section ol li,
+.article-content .article-section ul li {
+	margin-bottom: .35rem;
+}
+
+.article-content .article-section ol li:last-child,
+.article-content .article-section ul li:last-child {
+	margin-bottom: 0;
+}
+
 .article-content .article-section a {
 	text-decoration: none;
 	color: var(--green-primary);
