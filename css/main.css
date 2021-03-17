@@ -67,6 +67,7 @@
 html, body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 100%;
+	font-weight: var(--regular);
 	color: var(--dark-primary) !important;
 	background-color: var(--light-gray);
 	scroll-behavior: smooth;
@@ -74,9 +75,10 @@ html, body {
 }
 
 p {
-	font-family: 1rem;
 	line-height: calc(1rem * 1.6) !important;
 	color: var(--dark-400);
+	font-size: 1rem;
+	margin-bottom: 1rem;
 	vertical-align: baseline;
 }
 
@@ -89,6 +91,13 @@ p {
 .mt-lg-1 {margin-top: var(--m-lg-1) !important;}
 .mt-lg-2 {margin-top: var(--m-lg-2) !important;}
 .mt-lg-3 {margin-top: var(--m-lg-3) !important;}
+
+.mt-md {margin-top: 3rem !important;}
+.mb-md {margin-bottom: 3rem !important;}
+.pt-md {padding-top: 3rem !important;}
+.pb-md {padding-bottom: 3rem !important;}
+.px-md {padding: 0 3rem !important;}
+.py-md {padding: 3rem 0 !important;}
 
 /* ===== Background ===== */
 .bg-green-50 {background-color: var(--green-50); transition: all .3s ease;}
@@ -920,6 +929,11 @@ p {
 
 .page-breadcrumb .breadcrumb-item.active {
 	color: var(--dark-200) !important;
+}
+
+/* Blogs Gallery */
+#lists-article {
+	overflow-x: hidden;
 }
 
 /* Blog Post */
