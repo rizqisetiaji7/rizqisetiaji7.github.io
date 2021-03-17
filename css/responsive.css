@@ -368,7 +368,6 @@
 	}
 
 	.article-content .article-heading .article-headline {
-		font-weight: var(--semibold);
 		font-size: 1.1rem;
 		margin-bottom: .5rem;
 	}
