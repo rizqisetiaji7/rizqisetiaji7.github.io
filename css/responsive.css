@@ -143,11 +143,6 @@
 		min-height: calc(1rem * 17);
 		max-height: calc(1rem * 17);
 	}
-
-	/* Article */
-	.article-content .article-thumbnail {
-		height: 15rem;
-	}
 }
 
 @media (min-width: 420px) {
