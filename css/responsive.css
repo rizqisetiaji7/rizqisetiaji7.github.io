@@ -157,6 +157,13 @@
 	}
 }
 
+@media (min-width: 495px) {
+	/* Article */
+	.article-content .article-thumbnail {
+		height: 22rem;
+	}
+}
+
 @media (min-width: 576px) {
 	/* ===== Section About ===== */
 	#about-me .card-about {
@@ -407,4 +414,4 @@
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { ... }
+/* @media (min-width: 1400px) {  } */
