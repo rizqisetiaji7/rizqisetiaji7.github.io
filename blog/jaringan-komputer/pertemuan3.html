@@ -192,9 +192,7 @@
                             </div>
                             <p><b>Network Interface Card</b> atau NIC adalah perangkat jaringan yang berbentuk seperti papan elektronik (PCB) yang berfungsi untuk mengubah atau mengkonversi sinyal jaringan komputer menjadi data yang dapat dikirim atau diterima dalam suatu jaringan.</p>
                             
-                            <p>NIC atau LAN Card sesuai namanya berbentuk seperti kartu yang memiliki slot, dan di pasang didalam komponen slot motherboard komputer. NIC memiliki alamat khusus yang disebut dengan MAC address, yang berupa kumpulan kode 48bit dalam bentuk heksa, yang hanya dimiliki oleh satu device NIC, sehingga NIC memiliki MAC Address yang berbeda-beda.</p>
-
-                            <p>Dalam jaringan komputer, NIC memungkinkan di pakai atau digunakan pada kartu ethernet lainnya, yang akan menyebabkan collision atau bentrokan data, meski memang setiap peralatan jaringan komputer memiliki kelebihan dan kekurangannya masing-masing.</p>
+                            <p>NIC atau LAN Card sesuai namanya berbentuk seperti kartu yang memiliki slot, dan di pasang didalam komponen slot motherboard komputer. NIC memiliki alamat khusus yang disebut dengan MAC address, yang berupa kumpulan kode 48bit dalam bentuk heksa, yang hanya dimiliki oleh satu device NIC, sehingga NIC memiliki MAC Address yang berbeda-beda. Hal ini karena, NIC memungkinkan di pakai atau digunakan pada kartu ethernet lainnya, yang akan menyebabkan collision atau bentrokan data, sehingga NIC wajib memiliki suatu kode unik dari setiap devicenya.</p>
 
                             <h4 class="article-header-title">Fungsi NIC</h4>
                             <ol type="a">
@@ -209,7 +207,26 @@
                                 <li>NIC akan memecah data menjadi Bit, agar komputer mudah mengenalinya.</li>
                                 <li>Setelah memecah data menjadi bit, NIC akan kembali merangkainya dari bit menjadi data yang utuh.</li>
                                 <li>NIC akan mengenali kode MAC address (Media Access Control), pada setiap NIC agar diharapkan untuk menghindari konflik data dalam sistem jaringan komputer.</li>
-                                <li>Node jaringan akan mengirimkan paket data tertentu.</li>
+                                <li>Node jaringan akan mengirimkan paket data tertentu, ini tergantung apakah jaringan tersebut sedang mengirim paket data atau tidak. Jika tidak, maka node ini yang akan mengirimkan paket datanya.</li>
+                                <li>Node akan berhenti bersamaan dan tidak mengirimkan paket data.</li>
+                                <li>Node akan menunggu waktu agar dapat mengirimkan paket data lagi.</li>
+                                <li>Paket data yang terjadi collision akan dikirimkan kembali pada saat ada kesempatan.</li>
+                            </ol>
+
+                            <h4 class="article-header-title">Jenis NIC</h4>
+                            <ol type="a">
+                                <li>
+                                    <p>
+                                        <b>NIC Fisik</b> <br>
+                                        NIC jenis ini berbentuk seperti card/kartu yang memiliki slot yang di pasangkan pada motherboard komputer. Pada NIC ini juga terdapat port RJ-45 untuk mengkoneksikan ke jaringan dengan kabel.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <b>NIC Logis</b> <br>
+                                        NIC ini tidak memiliki bentuk fisik, melainkan software yang mendefinisikan bahwa itu merupakan sebuah NIC jaringan.
+                                    </p>
+                                </li>
                             </ol>
                         </div>
 
