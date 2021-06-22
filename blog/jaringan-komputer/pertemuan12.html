@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Pembuatan Jaringan Sederhana 2 - Tugas Pertemuan 12">
+    <meta name="description" content="Materi dan Tugas Jaringan Komputer UBSI Tasikmalaya">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rizqisetiaji7.github.io/blog/jaringan-komputer/pertemuan12.html">
+    <meta property="og:title" content="Pembuatan Jaringan Sederhana 2 - Tugas Pertemuan 12">
+    <meta property="og:description" content="Materi dan Tugas Jaringan Komputer UBSI Tasikmalaya">
+    <meta property="og:image" content="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/thomas-jensen-qTEj-KMMq_Q-unsplash_u7Wnwt3jQ-Zsw.jpg?tr=w-1200,h-630,fo-auto"> <!-- URL Facebook OG Image -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rizqisetiaji7.github.io/blog/jaringan-komputer/pertemuan12.html">
+    <meta property="twitter:title" content="Pembuatan Jaringan Sederhana 2 - Tugas Pertemuan 12">
+    <meta property="twitter:description" content="Materi dan Tugas Jaringan Komputer UBSI Tasikmalaya">
+    <meta property="twitter:image" content="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/thomas-jensen-qTEj-KMMq_Q-unsplash_u7Wnwt3jQ-Zsw.jpg?tr=w-1200,h-675,fo-auto"> <!-- URL Twitter Card Image -->
+
+    <title>Tugas Pertemuan 12 - Pembuatan Jaringan Sederhana 2</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Animated On Scroll (AOS) -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- Icon Scout -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://rizqisetiaji7.github.io/css/main.css">
+    <link rel="stylesheet" href="https://rizqisetiaji7.github.io/css/responsive.css">
+
+    <link rel="icon" href="https://ik.imagekit.io/dpssqgxkxg2/rzq/favicon_nhiE78AbZi.ico">
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-default bg-light">
+             <div class="container">
+                 <a class="navbar-brand" href="https://rizqisetiaji7.github.io/">
+                     <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/logo_OT72nmuHF0l.png" height="30" alt="RZQ Logo">
+                 </a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                     <div class="toggle-icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                         </svg>
+                     </div>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                     <div class="navbar-nav m-auto">
+                         <a class="nav-link" href="https://rizqisetiaji7.github.io/">Home</a>
+                         <a class="nav-link" href="#">Tentang</a>
+                         <a class="nav-link" href="#">Kontak</a>
+                         <a class="nav-link active" href="https://rizqisetiaji7.github.io/blog/">Blog</a>
+                     </div>
+
+                     <div class="nav-social d-flex flex-row">
+                         <a class="nav-link" href="https://www.instagram.com/rizqisetiaji7/" target="_blank" title="Instagram">
+                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160 C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48 h192c61.76,0,112,50.24,112,112V352z"/></g></g><g><g><path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336 c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/></g></g><g><g><circle cx="393.6" cy="118.4" r="17.056"/></g></g></svg>
+                         </a>
+
+                         <a class="nav-link" href="#" target="_blank" title="Whatsapp">
+                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456 C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504 c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792 c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184 c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392 c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352 c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024 c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568 c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z"/></g></g></svg>
+                         </a>
+
+                         <a class="nav-link" href="https://github.com/rizqisetiaji7" target="_blank" title="Github">
+                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                 <g>
+                                     <g>
+                                         <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
+                                         c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
+                                         c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
+                                         c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368
+                                         c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68
+                                         c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672
+                                         c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992
+                                         c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
+                                         c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/>
+                                     </g>
+                                 </g>
+                             </svg>
+                         </a>
+                     </div>
+                 </div>
+             </div>
+        </nav>
+    </header><!-- /header -->
+
+    <!-- Content -->
+
+    <section class="article">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Pembuatan Jaringan Sederhana 2</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-lg-9 mb-5" data-aos="fade-down">
+                    <article class="article-content">
+                        <div class="article-thumbnail" style="background-image: url(https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/thomas-jensen-qTEj-KMMq_Q-unsplash_u7Wnwt3jQ-Zsw.jpg);">
+                            <!-- <span class="source-img-attribute">Technology photo created by rawpixel.com - <a href="https://www.freepik.com/photos/technology" target="_blank">www.freepik.com</a></span> -->
+                        </div>
+
+                        <div class="article-heading">
+                            <span class="article-headline d-block c-orange">Tugas Jaringan Komputer - Pertemuan 12</span>
+                            <h1 class="article-title mb-2">Pembuatan Jaringan Sederhana 2</h1>
+                        </div>
+
+                        <div class="article-detail-post">
+                            <span class="article-detail-item">
+                                <i class="uil uil-calendar-alt"></i> <small>22 Juni 2021</small>
+                            </span>
+                            <span class="article-detail-item">
+                                <i class="uil uil-user"></i> 
+                                <small>
+                                    <b>Author</b> : <a href="https://github.com/rizqisetiaji7/" class="c-green-400 hover:c-green" target="_blank">Rizqi Setiaji</a>
+                                </small>
+                            </span>
+                        </div>
+
+                        <!-- Article Content -->
+
+                        <div class="article-section mt-lg-1">
+                            <div class="mb-lg-2">
+                                <h2 class="article-header-title">1. Jelaskan fungsi-fungsi dari protokol di bawah ini:</h2>
+                                <ol style="list-style-type: none;">
+                                    <li style="margin-bottom: 3rem;"> <!-- ICMP -->
+                                        <h4><span style="margin-right: .5rem;">A.</span>ICMP</h4>
+                                        <p>
+                                            ICMP merupakan singkatan dari Internet Control Message Protocol. ICMP merupakan salah satu dari kelompok internet protokol yang terhubung dalam jaringan internet yang memiliki banyak peran penting. Fungsi ICMP sebagai protokol jaringan adalah berfungsi sebagai lalu lintas informasi untuk memberitahu pesan-pesan error, atau error handling message.
+                                        </p>
+
+                                        <p>
+                                            Berbeda dengan TCP atau UDP yang tidak digunakan secara langsung dalam jaringan komputer. Kecuali penggunaan fitur ping untuk menentukan apakah komputer tujuan dapat dijangkau dan berapa lama paket yang dikirimkan dibalas oleh komputer tujuan.
+                                        </p>
+
+                                        <p>
+                                            ICMP juga digunakan untuk memberikan pesan error jika suatu layanan jika layanan yang diminta pengguna tidak tersedia, atau jika komputer tidak bisa dihubungi.
+                                        </p>
+
+                                        <p>
+                                            Berikut merupakan beberapa fungsi dari ICMP sebagai berikut:
+                                        </p>
+
+                                        <ol>
+                                            <li>
+                                                <h5>Error Handling / memberitahu bahwa jaringan sedang mengalami kendala atau error.</h5>
+                                                <p>Dengan adanya ICMP ini maka setiap terjadi error dalam jaringan, maka disini ICMP akan menghandle error dalam jaringan komputer tersebut.</p>
+                                            </li>
+
+                                            <li>
+                                                <h5>Mendeteksi error pada jaringan seperti lost connection, kemacetan dalam transmisi data dalam jaringan, dsb.</h5>
+                                                <p>Tugas dalam mendeteksi dan mengirimkan notifikasi akan terjadinya error juga merupakan tugas dan fungsi utama dari ICMP ini. ICMP merupakan protokol yang memiliki peran penting ketika terjadi error pada sebuah jaringan atau network. Ketika ICMP mendeteksi terjadinya error, maka router atau perangkat keras dalam jaringan lainnya akan mengirimkan notifikasi kepada ICMP, seperti host tidak dijangkau, atau koneksi terputus.</p>
+                                            </li>
+
+                                            <li>
+                                                <h5>Menyediakan pengendalian error dan pengendalian arus pada lapisan jaringan</h5>
+                                                <p>ICMP selain melakukan error handling, juga memiliki fungsi lain, yaitu melakukan pengendalian terhadap transmisi data dalam lapisan jaringan komputer.</p>
+                                            </li>
+                                        </ol>
+
+                                        <p>ICMP memiliki beberapa tipe pesan yang bisa dideteksi dari protokol ini, yaitu:</p>
+                                        <ol>
+                                            <li>
+                                                <h5>ICMP Error Message</h5>
+                                                <p>Error message yang akan dikirimkan ketika terjadi error dalam jaringan, tipe pesan ini juga dibagi lagi menjadi beberapa jenis pesan, seperti berikut:</p>
+
+                                                <ol type="a">
+                                                    <li>
+                                                        <p><b>Destination Unreachable</b> :  Error ini terjadi ketika transmisi data mengalami kegagalan atau error yang disebabkan oleh beberapa faktor seperti terputusnya koneksi secara fisik maupun logic yang disampaikan melalui perangkat router.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><b>Time Exceeded</b>: Pesan ini muncul ketika paket data yang ditransmisikan ketika TTL pada IP sudah tidak ada namun data belum sampai pada tujuannya tersebut, pesan yang ditampilkan seperti request time out.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><b>Parameter problem</b>: Terjadi jika ada kesalahan pada header pada data yang ditransmisikan.</p>
+                                                    </li>
+
+                                                    <li>
+                                                        <p><b>Source Quench</b>: Pesan yang muncul jika terjadi kesalahan atau gangguan yang terjadi pada router tujuan, yang menyebabkan data yang ditransmisikan menjadi lambat.</p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+
+                                            <li>
+                                                <h5>ICMP Query Message</h5>
+                                                <p>Pesan ini tidak ada hubungannya dengan error message, sehingga pesan yang dikirimkan hanya merupakan pesan pembalasan saja.</p>
+                                            </li>
+                                        </ol>
+                                    </li> <!-- ICMP End -->
+
+                                    <li style="margin-bottom: 3rem;"> <!-- POP3 -->
+                                        <h4><span style="margin-right: .5rem;">B.</span>POP3</h4>
+                                        <p><b>POP3</b> atau singkatan dari Post Office Protocol Versi 3, adalah sebuah protokol email yang biasa digunakan untuk mengambil data dari server email. Penggunaan POP3 ini ditujukan sebagai wadah atau menampung email sementara hingga email tersebut di download atau diakses oleh si penerima di perangkat komputer atau mobile.
+                                        </p>
+
+                                        <p>Skema POP3 mengharuskan untuk mendownload email secara otomatis. Sehingga pengguna dapat mengakses email kapanpun dan dimanapun tanpa koneksi internet.
+                                        Berbeda dengan SMTP,  yang memiliki fungsi hampir sama dengan POP3. POP3 memungkinkan untuk menerima email dan menyimpan email tersebut dalam email server hingga ada penerima yang mengakses email tersebut. Sedangkan SMTP yang hanya mengirimkan email ke dalam web server.</p>
+                                    </li> <!-- POP3 End -->
+
+                                    <li style="margin-bottom: 3rem;"> <!-- SMTP -->
+                                        <h4><span style="margin-right: .5rem;">C.</span>SMTP</h4>
+                                        <p><b>SMTP</b> merupakan singkatan dari <i>Simple Mail Transfer Protocol</i>, yang merupakan salah satu dari protokol jaringan yang berguna untuk mengirimkan email dari lokal email ke server, sebelum dikirimkan ke email penerima.
+                                        </p>
+
+                                        <p>Selain itu, SMTP berfungsi sebagai pengontrol data yang ditransmisikan melalui TCP (<i>Transfer Control Protocol</i>). Dalam lapisan layer OSI SMTP termasuk ke dalam layer aplikasi (<i>Application Layer</i>) yang dimanfaatkan oleh para pengguna untuk menentukan sumber daya pada jaringan, melakukan identifikasi terhadap partner komunikasi, dan juga untuk melakukan sinkronisasi komunikasi.</p>
+
+                                        <h5>Fungsi SMTP</h5>
+                                        <p>Fungsi SMTP ini pada dasarnya berfungsi untuk mengirimkan pesan elektronik atau email melalui jaringan komputer. Pengguna yang akan mendapatkan kiriman pesan tersebut adalah mereka yang menggunakan alamat IP pada TCP dengan port 25 yang mana didalamnya juga menggunakan mesin antar host. Host yang digunakan tersebut yaitu MUA atau USer Agent dan juga MTA atau Mail Transfer Agent.</p>
+
+                                        <p>Kemudian, email yang sudah dikirim tersebut akan diterima oleh POP3 maupun IMAP. Selanjutnya POP3 atau Post Office Protocol 3 akan mengunduh dan lalu menyimpan email tersebut melalui data server yang ada di SMTP dengan memanfaatkan TCP pada port 10. POP3 akan mengunduh pesan seluruhnya tanpa harus memilih atau melakukan tindakan selektif.</p>
+
+                                        <p>Setelah seluruh pesan di download, maka klien POP3 bisa langsung memutus koneksi dan langsung bisa memindahkan seluruh data yang sudah didownload tersebut.</p>
+                                    </li> <!-- SMTP END -->
+
+                                    <li style="margin-bottom: 3rem;"> <!-- FTP -->
+                                        <h4><span style="margin-right: .5rem;">D.</span>FTP</h4>
+                                        <p>
+                                            File Transfer Protocol atau FTP adalah protokol internet yang bertujuan untuk mentransfer atau mengirimkan berkas sebagai standar komunikasi antar jaringan komputer. Selain itu, FTP juga memiliki hubungan erat dengan Telnet, yang dimana telnet dapat melakukan komunikasi secara redirect atau langsung sementara FTP melakukan komunikasi secara tidak langsung. Terdapat dua jenis TCP/IP koneksi dan menjadi dua model utama yang dikenalkan. Koneksi yang tidak langsung memakai sumber daya dari remote-host pada sistem lokal.
+                                        </p>
+
+                                        <h5>Fungsi dan kegunaan FTP:</h5>
+                                        <p>FTP memiliki beberapa fungsi yang diandalkan banyak orang, salah satunya dipakai untuk mengunggah halaman web atau website ke dalam internet, proses pengunggahan halaman website ini dilakukan melalui web hosting. Lalu, FTP juga dapat dipakai untuk memperbarui revisi program pada aplikasi FTP, lebih dari itu berikut ini beberapa kegunaan dari FTP.</p>
+
+                                        <ul>
+                                            <li><b>Melakukan proses upload halaman website ke internet melalui web server atau web hosting.</b></li>
+                                            <li><b>Mampu digunakan untuk menjelajah dan mengunduh file dari sebuah situs.</b></li>
+                                            <li><b>Mampu digunakan untuk mengirim file dengan ukuran besar, jika terlalu besar dapat dibagi menjadi dua partisi untuk lampiran di email.</b></li>
+                                            <li><b>Melakukan pengunduhan dan upload konten, misalnya seperti tugas kantor dan kuliah ke server FTP.</b></li>
+                                            <li><b>Melakukan pendistribusian revisi program, biasanya dilakukan oleh pengembang perangkat lunak.</b></li>
+                                        </ul>
+                                    </li> <!-- FTP END -->
+
+                                    <li style="margin-bottom: 3rem;"> <!-- ARP -->
+                                        <h4><span style="margin-right: .5rem;">E.</span>ARP</h4>
+                                        <p>ARP singkatan dari <b><i>Address Resolution Protocol</i></b>, adalah protokol jaringan dalam TCP/IP yang berperan dalam resolusi alamat IP ke dalam <b><i>Media Access control</i></b> atau MAC Address suatu Host yang terhubung kedalam jaringan. Alamat IP yang dimiliki oleh host yang dituju akan diterjemahkan dahulu ke dalam MAC Address agar frame-frame data dapat diteruskan ke tujuan dan diletakkan di atas media transmisi (kabel, radio, atau cahaya), setelah diproses terlebih dahulu oleh <b><i>Network Interface Card</i></b> (NIC). Hal ini dikarenakan NIC beroperasi dalam lapisan fisik dan lapisan data-link pada tujuh layer OSI dan menggunakan alamat fisik daripada menggunakan alamat logis (seperti halnya alamat IP) untuk melakukan dapat melakukan komunikasi didalam jaringan internet.</p>
+
+                                        <h5>Fungsi serta peran dari Protokol ARP:</h5>
+                                        <ol type="a">
+                                            <li>Peran protokol ARP ini sangat penting dalam jaringan, terutama mengenai komunikasi data yang terjadi dalam jaringan. Setiap host yang tergabung atau terhubung dalam sebuah jaringan LAN saling berkomunikasi menggunakan alamat fisik (Mac Address) dan tidak menggunakan alamat logis (IP Address).</li>
+
+                                            <li>Dikatakan pada poin nomor satu, bahwa setiap Host berkomunikasi menggunakan alamat fisik (Mac Address). Jadi, mau tidak mau setiap sebuah Host yang ingin berkomunikasi dengan Host lain harus mengetahui Mac Address yang dimiliki oleh Host tujuannya tersebut.</li>
+
+                                            <li>Lalu bagaimana sebuah Host bisa mendapatkan informasi mengenai Mac Address dari Host tujuannya? Jawabannya adalah pada tahapan transfer data. Sebelum sebuah data diberikan Mac address, terlebih dahulu data tersebut diberi alamat logis berupa IP Address. IP address yang ditambahkan ini merupakan IP address dari Host pengirim dan Host penerima.</li>
+
+                                            <li>Baru kemudian menentukan alamat fisik atau Mac Address dari Host tujuan. Nah, apabila belum diketahui alamat fisiknya, mau tidak mau harus dicari terlebih dahulu. Disinilah peran protokol ARP, dengan memanfaatkan informasi IP address Host tujuan yang ada, maka Host pengirim melakukan pencarian dengan menugaskan Protokol ARP.</li>
+                                        </ol>
+                                    </li> <!-- ARP END -->
+                                </ol>
+                            </div>
+
+                            <div class="mb-lg-2">
+                                <h2 class="article-header-title">2. Berikan penjelasan mengenai kelebihan dan kekurangan Ipv4 dan Ipv6?</h2>
+                                <ol style="list-style-type: none;">
+                                    <li style="margin-bottom: 3rem;"> <!-- ICMP -->
+                                        <h4><span style="margin-right: .5rem;">A.</span>Kelebihan dan Kekurangan IPv4</h4>
+                                        <ol style="margin-left: 1.25rem;">
+                                            <li>
+                                                <h5>Kelebihan IPv4:</h5>
+                                                <ul>
+                                                    <li>Tidak mensyaratkan ukuran paket pada link layer dan harus bisa menyusun kembali paket berukuran 576 byte.</li>
+                                                    <li>Pengelolaan rute informasi yang tidak memerlukan seluruh 32 bit tersebut, melainkan cukup hanya bagian jaringannya saja, sehingga besar informasi rute yang disimpan di router, menjadi kecil. Setelah address jaringan diperoleh, maka organisasi tersebut dapat secara bebas memberikan address bagian host pada masing-masing hostnya.</li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <h5>Kekurangan IPv4:</h5>
+                                                <ul>
+                                                    <li>Panjang alamat 32 bit (4 bytes).</li>
+                                                    <li>Dikonfigurasi secara manual atau DHCP IPv4.</li>
+                                                    <li>Dukungan terhadap IPSec opsional.</li>
+                                                    <li>Fragmentasi dilakukan oleh pengirim dan pada router, menurunkan kinerja router.</li>
+                                                    <li>IPv4 yang hanya memiliki panjang 32-bit (jumlah total alamat yang dapat dicapainya mencapai 4,294,967,296 alamat). IPv4, meskipun total alamatnya mencapai 4 miliar, pada kenyataannya tidak sampai 4 miliar alamat, karena ada beberapa limitasi, sehingga implementasinya saat ini hanya mencapai beberapa ratus juta saja.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li style="margin-bottom: 3rem;"> <!-- ICMP -->
+                                        <h4><span style="margin-right: .5rem;">B.</span>Kelebihan dan Kekurangan IPv6</h4>
+                                        <ol style="margin-left: 1.25rem;">
+                                            <li>
+                                                <h5>Kelebihan IPv6:</h5>
+                                                <ul>
+                                                    <li>Lebih Cepat, tak bergantung dengan NAT (Network-Address Translation). Hal ini membuat proses transfer data bisa lebih cepat.</li>
+                                                    <li>Lebih Efektif, memiliki ukuran routing table lebih sedikit dari IPv4. Ini membuat proses routing lebih tersusun rapi dan efektif.</li>
+                                                    <li>Lebih Aman, dibekali kemampuan enkripsi untuk membuat proses pertukaran data lebih aman. Lalu, juga lebih siap menangkal serangan ke ARP (Address Resolution Protocol) yang bisa mengalihkan trafik dan memanipulasinya.</li>
+                                                    <li>Bandwidth Lebih Hemat, mendukung multicast  sehingga membuat penggunaan bandwidth lebih hemat. Sebab, pertukaran data yang rakus bandwidth bisa dikirim ke berbagai tujuan secara bersamaan.</li>
+                                                    <li>Konfigurasi Lebih Mudah, Konfigurasi IP address berjalan secara otomatis sehingga jauh lebih mudah dan praktis.</li>
+                                                    <li>Lebih Cocok untuk Mobile, Koneksi pada perangkat mobile bisa lebih cepat. Sebab, koneksinya tak perlu melewati NAT yang akan memakan waktu.</li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <h5>Kekurangan IPv6:</h5>
+                                                <ul>
+                                                    <li>Kompatibilitas belum optimal, kebanyakan perangkat yang mengakses internet masih menggunakan IPv4. Jadi, dukungan infrastruktur dan jaringan IPv6 belum menyeluruh.</li>
+                                                    <li>Tren peralihan yang lambat, walaupun sudah dikenalkan sejak 1995, penggunaan IPv6 baru mencapai 35% saja di dunia.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- End Article Content -->
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3" data-aos="fade-down">
+                    <aside class="sidebar-content">
+                        <span class="sidebar-main-title">Sidebar Menu - <span class="c-green">Coming soon</span></span>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Content -->
+
+    <footer id="footer" class="bg-dark">
+        <div class="container">
+            <div class="row footer-menu">
+                <div class="col-sm-12 col-md-5 m-auto text-center">
+                    <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/logo-white_GcUk5RxaNwN.png" alt="RZQ Logo" class="footer-logo" class="m-auto">
+                    <p class="footer-desc c-dark-200">Website untuk sharing dan belajar dunia teknologi informasi, khususnya di bidang web development.</p>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-5 m-auto">
+                    <div class="footer-social-media text-center">
+                        <h4 class="footer-menu-title c-dark-50 mb-3">Social media:</h4>
+                        <div class="footer-social-content d-flex justify-content-center">
+                            <a href="https://www.instagram.com/rizqisetiaji7/" class="icon-social" title="Instagram" target="_blank">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160 C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48 h192c61.76,0,112,50.24,112,112V352z"/></g></g><g><g><path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336 c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/></g></g><g><g><circle cx="393.6" cy="118.4" r="17.056"/></g></g></svg>
+                            </a>
+                            <a href="#" class="icon-social" title="Whatsapp" target="_blank">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M256.064,0h-0.128C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104l98.4-31.456 C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z M405.024,361.504 c-6.176,17.44-30.688,31.904-50.24,36.128c-13.376,2.848-30.848,5.12-89.664-19.264C189.888,347.2,141.44,270.752,137.664,265.792 c-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624,26.176-62.304c6.176-6.304,16.384-9.184,26.176-9.184 c3.168,0,6.016,0.16,8.576,0.288c7.52,0.32,11.296,0.768,16.256,12.64c6.176,14.88,21.216,51.616,23.008,55.392 c1.824,3.776,3.648,8.896,1.088,13.856c-2.4,5.12-4.512,7.392-8.288,11.744c-3.776,4.352-7.36,7.68-11.136,12.352 c-3.456,4.064-7.36,8.416-3.008,15.936c4.352,7.36,19.392,31.904,41.536,51.616c28.576,25.44,51.744,33.568,60.032,37.024 c6.176,2.56,13.536,1.952,18.048-2.848c5.728-6.176,12.8-16.416,20-26.496c5.12-7.232,11.584-8.128,18.368-5.568 c6.912,2.4,43.488,20.48,51.008,24.224c7.52,3.776,12.48,5.568,14.304,8.736C411.2,329.152,411.2,344.032,405.024,361.504z"/></g></g></svg>
+                            </a>
+                            <a href="https://github.com/rizqisetiaji7" class="icon-social" title="Github" target="_blank">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
+                                            c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
+                                            c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
+                                            c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368
+                                            c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68
+                                            c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672
+                                            c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992
+                                            c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
+                                            c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer-copyright">
+                <div class="col-sm-12 col-md-6">
+                    <div class="footer-link-menu">
+                        <a href="#" title="Tentang kami">Tentang</a>
+                        <a href="#" title="Kontak">Kontak</a>
+                        <a href="https://rizqisetiaji7.github.io/blog/" title="Daftar blog">Blog</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <p class="copyright-text mb-0 c-dark-200">Copyright &copy; 2021 by <a href="https://github.com/rizqisetiaji7" class="c-dark-50 hover:c-orange" title="Rizqi Setiaji" target="_blank">Rizqi Setiaji</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) CDN Version -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://rizqisetiaji7.github.io/js/index.js"></script>
+</body>
+</html>
