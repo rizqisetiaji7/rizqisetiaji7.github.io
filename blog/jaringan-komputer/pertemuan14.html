@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Pembuatan Jaringan Sederhana 3 - Tugas Pertemuan 14">
+    <meta name="description" content="Materi dan Tugas Jaringan Komputer UBSI Tasikmalaya">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rizqisetiaji7.github.io/blog/jaringan-komputer/pertemuan14.html">
+    <meta property="og:title" content="Pembuatan Jaringan Sederhana 3 - Tugas Pertemuan 14">
+    <meta property="og:description" content="Materi dan Tugas Jaringan Komputer UBSI Tasikmalaya">
+    <meta property="og:image" content="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/thumb_UWraCP_L9.jpg?tr=w-1200,h-630,fo-auto"> <!-- URL Facebook OG Image -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rizqisetiaji7.github.io/blog/jaringan-komputer/pertemuan12.html">
+    <meta property="twitter:title" content="Pembuatan Jaringan Sederhana 3 - Tugas Pertemuan 14">
+    <meta property="twitter:description" content="Materi dan Tugas Jaringan Komputer UBSI Tasikmalaya">
+    <meta property="twitter:image" content="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/thumb_UWraCP_L9.jpg?tr=w-1200,h-675,fo-auto"> <!-- URL Twitter Card Image -->
+
+    <title>Tugas Pertemuan 14 - Pembuatan Jaringan Sederhana 3</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Animated On Scroll (AOS) -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- Icon Scout -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://rizqisetiaji7.github.io/css/main.css">
+    <link rel="stylesheet" href="https://rizqisetiaji7.github.io/css/responsive.css">
+
+    <link rel="icon" href="https://ik.imagekit.io/dpssqgxkxg2/rzq/favicon_nhiE78AbZi.ico">
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-default bg-light">
+             <div class="container">
+                 <a class="navbar-brand" href="https://rizqisetiaji7.github.io/">
+                     <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/logo_OT72nmuHF0l.png" height="30" alt="RZQ Logo">
+                 </a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                     <div class="toggle-icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                         </svg>
+                     </div>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                     <div class="navbar-nav m-auto">
+                         <a class="nav-link" href="https://rizqisetiaji7.github.io/">Home</a>
+                         <a class="nav-link" href="#">Tentang</a>
+                         <a class="nav-link" href="#">Kontak</a>
+                         <a class="nav-link active" href="https://rizqisetiaji7.github.io/blog/">Blog</a>
+                     </div>
+
+                     <div class="nav-social d-flex flex-row">
+                         <a class="nav-link" href="https://www.instagram.com/rizqisetiaji7/" target="_blank" title="Instagram">
+                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160 C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48 h192c61.76,0,112,50.24,112,112V352z"/></g></g><g><g><path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336 c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/></g></g><g><g><circle cx="393.6" cy="118.4" r="17.056"/></g></g></svg>
+                         </a>
+
+                         <a class="nav-link" href="https://www.linkedin.com/in/rizqisetiaji/" target="_blank" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"/></svg>
+                         </a>
+
+                         <a class="nav-link" href="https://github.com/rizqisetiaji7" target="_blank" title="Github">
+                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                 <g>
+                                     <g>
+                                         <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
+                                         c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
+                                         c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
+                                         c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368
+                                         c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68
+                                         c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672
+                                         c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992
+                                         c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
+                                         c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/>
+                                     </g>
+                                 </g>
+                             </svg>
+                         </a>
+                     </div>
+                 </div>
+             </div>
+        </nav>
+    </header><!-- /header -->
+
+    <!-- Content -->
+
+    <section class="article">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Pembuatan Jaringan Sederhana 3</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-lg-9 mb-5" data-aos="fade-down">
+                    <article class="article-content">
+                        <div class="article-thumbnail" style="background-image: url(https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/thumb_UWraCP_L9.jpg);">
+                            <!-- <span class="source-img-attribute">Technology photo created by rawpixel.com - <a href="https://www.freepik.com/photos/technology" target="_blank">www.freepik.com</a></span> -->
+                        </div>
+
+                        <div class="article-heading">
+                            <span class="article-headline d-block c-orange">Tugas Jaringan Komputer - Pertemuan 14</span>
+                            <h1 class="article-title mb-2">Pembuatan Jaringan Sederhana 3</h1>
+                        </div>
+
+                        <div class="article-detail-post">
+                            <span class="article-detail-item">
+                                <i class="uil uil-calendar-alt"></i> <small>02 Juli 2021</small>
+                            </span>
+                            <span class="article-detail-item">
+                                <i class="uil uil-user"></i> 
+                                <small>
+                                    <b>Author</b> : <a href="https://github.com/rizqisetiaji7/" class="c-green-400 hover:c-green" target="_blank">Rizqi Setiaji</a>
+                                </small>
+                            </span>
+                        </div>
+
+                        <!-- Article Content -->
+
+                        <div class="article-section mt-lg-1">
+                            <div class="mb-lg-2">
+                                <h2 class="article-header-title">SOAL:</h2>
+                                <ol type="1">
+                                    <li class="mb-2">Buatlah jaringan komputer sesuai dengan topologi yang telah disediakan.</li>
+                                    <li class="mb-2">Pada jaringan tersebut tuangkan sistem keamanan melalui line console dan line vty serta enkripsikan password tersebut.</li>
+                                    <li class="mb-2">Buatlah banner motd.</li>
+                                    <li class="mb-2">Router Interface G0/0 memiliki IP: 192.168.10.1/24</li>
+                                    <li class="mb-2">Router Interface G0/1 memiliki IP: 192.168.11.1/24 dan digunakan sebagai DHCP Server :
+                                        <ol type="a" class="mt-2">
+                                            <li class="mb-1">Excluded 192.168.11.1 192.168.11.40</li>
+                                            <li class="mb-1">Excluded 192.168.11.150 192.168.11.254</li>
+                                            <li class="mb-1">DHCP Pool “<b>JARINGAN-KOMPUTER</b>”</li>     
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="mb-lg-1">
+                                <h2 class="article-header-title">A. MEMBUAT TOPOLOGI</h2>
+                                <ol>
+                                    <li>
+                                        <p>Buat sebuah topologi dengan menggunakan aplikasi cisco packet tracer, lalu siapkan beberapa device seperti 1 buah router, 2 buah switch, dan 5 buah pc, kemudian susun seperti berikut:</p>
+                                        <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_01/01_jhwbj9cYP.png" height="250" class="mb-3" alt="01">
+                                    </li>
+                                    <li>
+                                        <p>Pilih kabel straight, pada menu pilihan kabel di bawah, lalu klik pada router, maka akan muncul dialog yang berisi list seperti berikut:</p>
+                                        <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_01/02_9Mk0VRGbt.png" height="60" class="mb-2" alt="02"> <br>
+                                        <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_01/03_IgmCssvWE.png" height="120" alt="03">
+                                        <p class="mt-2">Pilih <b>GigabitEthernet0/0/0</b>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Kemudian klik <b>switch0</b>, lalu pilih <b>FastEthernet0/1</b>:</p>
+                                        <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_01/04_9qnoch9X2fmC.png" width="170" class="mb-3" alt="04">
+                                    </li>
+                                    <li>
+                                        <p>Lakukan langkah nomor 2 dan 3 untuk <b>switch0</b>, bedanya pada router sekarang pilih menu <b>GigabitEthernet0/0/1</b>, dengan <b>FastEthernet0/1</b> sehingga hasilnya seperti berikut:</p>
+                                        <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_01/05_7FKIOxcWe.png" height="240" class="mb-3" alt="05">
+                                    </li>
+                                    <li>
+                                        <p>Hubungkan switch0 dengan PC0, PC1, dan PC2 menggunakan kabel straight, dengan ketentuan seperti berikut:</p>
+                                        <ul style="list-style-image: url(../../svg/right-arrow.svg);">
+                                            <li>
+                                                <p>Klik <b>switch0</b> kemudian pilih <b>FastEthernet0/2</b> ke <b>PC0</b> lalu pilih menu <b>FastEthernet0</b>.</p>
+                                            </li>
+                                            <li>
+                                                <p>Klik <b>switch0</b> kemudian pilih <b>FastEthernet0/3</b> ke <b>PC1</b> lalu pilih menu <b>FastEthernet0</b>.</p>
+                                            </li>
+                                            <li>
+                                                <p>Klik <b>switch0</b> kemudian pilih <b>FastEthernet0/4</b> ke <b>PC2</b> lalu pilih menu <b>FastEthernet0</b>. <br> Maka hasilnya seperti berikut:</p>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_01/06_X-OzGiJOz.png" height="240" class="mb-3" alt="06">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Hubungkan switch yang satunya lagi yaitu <b>switch1</b>, menggunakan kabel straight ke <b>PC3</b> dan <b>PC4</b>, dengan ketentuan berikut:</p>
+                                        <ul style="list-style-image: url(../../svg/right-arrow.svg);">
+                                            <li>
+                                                <p>Klik <b>switch1</b> kemudian pilih <b>FastEthernet0/2</b> ke <b>PC3</b> lalu pilih menu <b>FastEthernet0</b></p>
+                                            </li>
+                                            <li>
+                                                <p>Klik <b>switch1</b> kemudian pilih <b>FastEthernet0/3</b> ke <b>PC4</b> lalu pilih menu <b>FastEthernet0</b></p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Maka hasil akhir untuk menghubungkan beberapa device network akan menjadi seperti berikut:</p>
+                                        <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_01/07_Xi34fLGhsU4f.png" height="260" alt="07">
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="mb-lg-1">
+                                <h2 class="article-header-title">B. MEMBUAT SISTEM KEAMANAN PADA LINE CONSOLE <br> DAN LINE VTY</h2>
+                                <ol style="list-style-type: none;">
+                                    <li style="margin-bottom: 2rem;">
+                                        <h4>1. Line Console</h4>
+                                        <ul style="list-style-image: url(../../svg/right-arrow.svg);">
+                                            <li>Klik router, maka akan muncul jendela dialog lalu klik pada tab CLI</li>
+                                            <li>
+                                                <p>Lalu masukkan perintah seperti pada gambar berikut:</p>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_02/01_H9K9mkZpi.png" height="125" class="mb-1" alt="01"> <br>
+                                                <p class="mt-2">Pada gambar diatas merupakan perintah untuk mengkonfigurasi <b>line console 0</b>, serta memberi password keamanan dengan nama <b>jarkom12190261</b>.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>2. Line Vty</h4>
+                                        <ul style="list-style-image: url(../../svg/right-arrow.svg);">
+                                            <li class="mb-3">Masih pada tab CLI yang sama, untuk mengkonfigurasi line vty, maka ketik perintah sebagai berikut: <br>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_02/02_-0UikmvJR.png" height="125" class="mb-2" alt="02"> <br>
+                                            Konfigurasi password pada <b>line vty 0 4</b>, seperti pada gambar diatas, sama seperti line console, disini juga wajib memberikan password keamanan dengan nama <b>jarkom12190261</b>.
+                                            </li>
+                                            <li class="mb-3">
+                                                Untuk mengecek apakah password berhasil dibuat atau tidak, ketik perintah exit terlebih dahulu dari router, lalu masukkan password yang tadi sudah dibuat, jika berhasil login, maka akan seperti berikut: <br>
+                                                 <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_02/03_Iw28cjFkl5MT.png" height="125" class="mb-2" alt="03">
+                                            </li>
+                                            <li class="mb-3">
+                                                Buat enkripsi pada password, dengan mengetikkan perintah berikut:<br>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_02/04_avGGBOme2.png" height="125" class="mb-2" alt="04">
+                                            </li>
+                                            <li>
+                                                Ketik perintah <b>show run</b>, untuk melihat bahwa password berhasil terenkripsi. Jika password berhasil dienkripsi, hasilnya seperti berikut: <br>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_02/05_8f7cGLS37.png" width="350" class="mt-1 mb-2" alt="05"> <br>
+                                                Untuk melihat hasil enkripsi seperti gambar diatas, scroll ke bawah hingga ke bagian <b>line con 0</b>.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="mb-lg-1">
+                                <h2 class="article-header-title">C. MEMBUAT BANNER MOTD</h2>
+                                <ol style="list-style-image: url(../../svg/right-arrow.svg); margin-left: 2.15rem;">
+                                    <li>
+                                        <p>Buat banner MOTD dengan tulisan ‘<b>SELAMAT DATANG</b>’, dengan mengetik perintah berikut:</p>
+                                        <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_03/01_KlyqUVsYq1I4.png" class="mb-3" height="140" alt="01">
+                                    </li>
+                                    <li>
+                                        <p>Kemudian exit terlebih dahulu, jika banner MOTD berhasil dibuat maka akan menampilkan teks '<b>SELAMAT DATANG</b>’, seperti berikut:</p>
+                                        <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_03/02_L4HwuXgWE.png" height="140" alt="02">
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="mb-lg-1">
+                                <h2 class="article-header-title">D. MEMBUAT INTERFACE</h2>
+                                <ol style="list-style-type: none; margin-left: 0.85rem;">
+                                    <li>
+                                        <h4>1. Router Interface G0/0</h4>
+                                        <ul style="list-style-image: url(../../svg/right-arrow.svg); margin-left: 1.2rem;">
+                                            <li>
+                                                <p>Ketikkan perintah <b>interface GigabitEthernet0/0/0</b>, lalu set IP address dan subnet mask seperti gambar berikut:</p>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_04/01_HvWhxIJUh.png" height="140" class="mb-3" alt="01">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>2. Router Interface G0/1</h4>
+                                        <ul style="list-style-image: url(../../svg/right-arrow.svg); margin-left: 1.2rem;">
+                                            <li>
+                                                <p>Lakukan hal yang sama seperti pada interface G0/0, ketik perintah <b>interface GigabitEthernet0/0/1</b>, lalu set IP address nya menjadi <b>192.168.11.1</b> dengan subnet mask <b>255.255.255.0</b></p>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_05/01_GBSMhEwXh.png" height="180" class="mb-3" alt="01">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="mb-lg-1">
+                                <h2 class="article-header-title">E. MEMBUAT DHCP SERVER PADA G0/1</h2>
+                                <p>Membuat DHCP server dengan jangkauan atau range yang ditentukan beserta DHCP Pool dengan nama ‘<b>JARINGAN-KOMPUTER</b>’, Ketikkan perintah seperti berikut:</p>
+                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_05/02_IiukQxzLRCOL.png" height="170" class="mb-3" alt="02">
+                            </div>
+
+                            <div class="mb-lg-1">
+                                <h2 class="article-header-title">F. SET IP ADDRESS PADA SETIAP PC</h2>
+                                <ol style="list-style-type: none; margin-left: 0.75rem;">
+                                    <li style="margin-bottom: 2rem;">
+                                        <h4>1. Set IP address pada jaringan ke-1 dengan IP Static</h4>
+                                        <ul style="list-style-image: url(../../svg/right-arrow.svg); margin-left: 1.2rem;">
+                                            <li>Klik pada <b>PC0</b>, kemudian pilih menu <b>IP Configuration</b> lalu klik tab <b>Desktop</b></li>
+                                            <li>Pada IP Configuration set IPv4 dengan IP <b>192.168.10.2</b></li>
+                                            <li>Set Subnet mask menjadi <b>255.255.255.0</b></li>
+                                            <li>
+                                                Dan default gateway menjadi <b>192.168.10.1</b> <br>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_06/01__bt4Vb59d.png" height="200" class="mt-2 mb-3" alt="01"> <br>
+                                                Lakukan hal yang sama seperti langkah di atas dengan ketentuan berikut: <br>
+                                                <ol type="a">
+                                                    <li>PC1 : IPv4 192.168.10.3 255.255.255.0 & default gateway 192.168.10.1</li>
+                                                    <li>PC2 : IPv4 192.168.10.4 255.255.255.0 & default gateway 192.168.10.1</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>2. Set IP address pada jaringan ke-2 dengan IP DHCP</h4>
+                                        <ul style="list-style-image: url(../../svg/right-arrow.svg); margin-left: 1.2rem;">
+                                            <li>Klik <b>PC3</b>, kemudian pilih menu <b>IP Configuration</b>, lalu pilih tab <b>Desktop</b></li>
+                                            <li>
+                                                <p>Pada interface ip configuration pilih <b>DHCP</b>, maka otomatis IP, subnet mask, dan Default gateway-nya akan terisi, berikut hasilnya:</p>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_06/02_5gSDO95z3.png" height="200" class="mb-2" alt="02">
+                                            </li>
+                                            <li>
+                                                <p>Hal yang sama juga dilakukan pada <b>PC4</b>:</p>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_06/03_gfAR6pUq0.png" height="200" class="mb-2" alt="03">
+                                            </li>
+                                            <li>
+                                                <p>Setelah melalui beberapa langkah di atas, maka hasilnya jaringan sudah berhasil terkoneksi satu sama lain:</p>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_06/04_o1-cp1nD9-md.png" class="mb-2" alt="04">
+                                            </li>
+                                            <li>Untuk mengecek berhasil atau tidaknya bisa dilakukan dengan tes PDU</li>
+                                            <li>
+                                                <p>Klik icon amplop seperti berikut:</p>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_06/05_UC1bPbvCY.png" height="100" class="mb-2" alt="05">
+                                            </li>
+                                            <li>
+                                                <p>Kemudian , sebagai contoh klik <b>PC3</b> kemudian klik <b>PC4</b>, jika berhasil cek pada bagian scenario di kanan bawah, seperti berikut:</p>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_06/06_pW2PxblJj.png" height="110" class="mb-2" alt="06">
+                                            </li>
+                                            <li>Jika berhasil maka last status <b>successful</b></li>
+                                            <li>
+                                                <p>Begitu juga jika di tes ke network lain, maka hasilnya akan <b>successful</b>, seperti contoh pada <b>PC3</b> ke <b>PC2</b>, seperti berikut:</p>
+                                                <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/kt_06/07_aKwNDsUULchr.png" height="130" class="mb-2" alt="07">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                            <p>Demikian tugas jaringan komputer pertemuan 14 mengenai pembuatan jaringan sederhana ke-3.</p>
+                        </div>
+                        <!-- End Article Content -->
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-3" data-aos="fade-down">
+                    <aside class="sidebar-content">
+                        <span class="sidebar-main-title">Sidebar Menu - <span class="c-green">Coming soon</span></span>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Content -->
+
+    <footer id="footer" class="bg-dark">
+        <div class="container">
+            <div class="row footer-menu">
+                <div class="col-sm-12 col-md-5 m-auto text-center">
+                    <img src="https://ik.imagekit.io/dpssqgxkxg2/rzq/logo-white_GcUk5RxaNwN.png" alt="RZQ Logo" class="footer-logo" class="m-auto">
+                    <p class="footer-desc c-dark-200">Website untuk sharing dan belajar dunia teknologi informasi, khususnya di bidang web development.</p>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-sm-12 col-md-5 m-auto">
+                    <div class="footer-social-media text-center">
+                        <h4 class="footer-menu-title c-dark-50 mb-3">Social media:</h4>
+                        <div class="footer-social-content d-flex justify-content-center">
+                            <a href="https://www.instagram.com/rizqisetiaji7/" class="icon-social" title="Instagram" target="_blank">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160 C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48 h192c61.76,0,112,50.24,112,112V352z"/></g></g><g><g><path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336 c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/></g></g><g><g><circle cx="393.6" cy="118.4" r="17.056"/></g></g></svg>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/rizqisetiaji/" class="icon-social" title="LinkedIn" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"/></svg>
+                            </a>
+                            
+                            <a href="https://github.com/rizqisetiaji7" class="icon-social" title="Github" target="_blank">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872
+                                            c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464
+                                            c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496
+                                            c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368
+                                            c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68
+                                            c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672
+                                            c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992
+                                            c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496
+                                            c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer-copyright">
+                <div class="col-sm-12 col-md-6">
+                    <div class="footer-link-menu">
+                        <a href="#" title="Tentang kami">Tentang</a>
+                        <a href="#" title="Kontak">Kontak</a>
+                        <a href="https://rizqisetiaji7.github.io/blog/" title="Daftar blog">Blog</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <p class="copyright-text mb-0 c-dark-200">Copyright &copy; <span class="cp-year"></span> by <a href="https://github.com/rizqisetiaji7" class="c-dark-50 hover:c-orange" title="Rizqi Setiaji" target="_blank">Rizqi Setiaji</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) CDN Version -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://rizqisetiaji7.github.io/js/index.js"></script>
+    <script>
+        const cp_year = document.querySelector('.cp-year');
+        const date = new Date();
+        const year = date.getFullYear();
+        cp_year.innerHTML = year;
+    </script>
+</body>
+</html>
