@@ -236,6 +236,27 @@
 
 				<div class="row mt-lg-1">
 					<div class="col-sm-12 col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-thumbnail d-flex align-items-center justify-content-center" style="background-image: url(https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/pertemuan14/thumb_UWraCP_L9.jpg);"></div>
+                    <div class="blog-content mt-4">
+                        <span class="blog-title-head mb-1 d-block c-orange">Tugas Jaringan Komputer - Pertemuan 14</span>
+                        <!-- Link Title -->
+                        <a href="https://rizqisetiaji7.github.io/blog/jaringan-komputer/pertemuan14.html" class="blog-title c-dark hover:c-green">Pembuatan Jaringan Sederhana 3</a>
+
+                        <div class="blog-post-detail mt-4">
+                            <span class="post-text">
+                                <i class="uil uil-calendar-alt"></i> <small>02 Juli 2021</small>
+                            </span>
+                            <span class="post-text">
+                                <i class="uil uil-user"></i> 
+                                <small>
+                                    <b>Author</b> : <a href="https://github.com/rizqisetiaji7/" class="c-green-400 hover:c-green" target="_blank">Rizqi Setiaji</a>
+                                </small>
+                            </span>
+                        </div>
+                    </div>
+               </div>
+
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
                     <div class="blog-thumbnail d-flex align-items-center justify-content-center" style="background-image: url(https://ik.imagekit.io/dpssqgxkxg2/rzq/Post/thomas-jensen-qTEj-KMMq_Q-unsplash_u7Wnwt3jQ-Zsw.jpg);"></div>
                     <div class="blog-content mt-4">
                         <span class="blog-title-head mb-1 d-block c-orange">Tugas Jaringan Komputer - Pertemuan 12</span>
@@ -379,7 +400,7 @@
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-6">
-					<p class="copyright-text mb-0 c-dark-200">Copyright &copy; 2021 by <a href="https://github.com/rizqisetiaji7" class="c-dark-50 hover:c-orange" title="Rizqi Setiaji" target="_blank">Rizqi Setiaji</a>. All rights reserved.</p>
+					<p class="copyright-text mb-0 c-dark-200">Copyright &copy; <span class="cp-year"></span> by <a href="https://github.com/rizqisetiaji7" class="c-dark-50 hover:c-orange" title="Rizqi Setiaji" target="_blank">Rizqi Setiaji</a>. All rights reserved.</p>
 				</div>
 			</div>
 		</div>
@@ -390,6 +411,11 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://rizqisetiaji7.github.io/js/index.js"></script>
-
+	<script>
+		const cp_year = document.querySelector('.cp-year');
+		const date = new Date();
+		const year = date.getFullYear();
+		cp_year.innerHTML = year;
+	</script>
 </body>
 </html>
